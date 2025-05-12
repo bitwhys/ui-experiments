@@ -5,9 +5,12 @@
 @import '../css/colors/tomato.css';
 @import '../css/colors/green.css';
 @import '../css/colors/red.css';
+/* Variables */
 @import '../css/tokens/semantic-colors.vars.css';
 @import '../css/tokens/themes.vars.css';
 @import '../css/tokens/shadows.vars.css';
+@import '../css/tokens/components.vars.css';
+/* Theme Utilities */
 @import '../css/theme/colors.theme.css';
 @import '../css/theme/semantic-colors.theme.css';
 

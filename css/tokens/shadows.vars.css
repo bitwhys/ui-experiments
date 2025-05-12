@@ -7,3 +7,13 @@
   --creight-shadow-2xl:
     0px 0px 1px 0px var(--color-black-a3), 0px 40px 64px 0px var(--color-gray-5);
 }
+
+.dark {
+  --creight-shadow-xs: 0px 0px 1px 0px var(--color-black-a4), 0px 1px 2px 0px var(--color-black-a4);
+  --creight-shadow-sm: 0px 0px 1px 0px var(--color-black-a8), 0px 4px 8px 0px var(--color-gray-6);
+  --creight-shadow-md: 0px 0px 1px 0px var(--color-black-a3), 0px 8px 16px 0px var(--color-gray-a5);
+  --creight-shadow-lg: 0px 0px 1px 0px var(--color-black-a3), 0px 12px 24px 0px var(--color-gray-a5);
+  --creight-shadow-xl: 0px 0px 1px 0px var(--color-black-a3), 0px 24px 32px 0px var(--color-gray-a5);
+  --creight-shadow-2xl:
+    0px 0px 1px 0px var(--color-black-a3), 0px 40px 64px 0px var(--color-gray-5);
+}

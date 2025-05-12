@@ -1,0 +1,16 @@
+:root {
+  /* Variables for cards */
+  --card-background-color: var(--color-main);
+  --card-text-color: var(--color-cnt-primary);
+  --card-decription-color: var(--color-main);
+  --card-ring-color: var(--color-brd-interactive);
+  --card-gap: calc(var(--spacing)* 6);
+  --card-radius: calc(var(--spacing) * 4);
+
+  /* Variables for popovers */
+  --popover-background-color: var(--color-main);
+  --popover-text-color: var(--color-cnt-primary);
+  --popover-decription-color: var(--color-main);
+  --popover-gap: calc(var(--spacing)* 6);
+  --popover-radius: calc(var(--spacing) * 4);
+}
