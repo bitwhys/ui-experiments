@@ -1,6 +1,7 @@
 import { type ReactNode } from 'react'
 
 import { cx } from '@/lib/utils'
+import ConfigSlider from '@/components/config-slider'
 import { ExperimentHeader } from '@/components/experiment-header'
 import { Logo } from '@/components/logo'
 
@@ -23,8 +24,10 @@ const ExperimentalLayout = ({ children }: { children: ReactNode }) => {
         {children}
       </div>
       {/*FIXME: just to test the concept, place a widget for controlling visual elements of a design in the middle box to the right */}
-      <div className="relative -left-px col-span-full col-start-5 row-span-2 row-start-2 bg-pink-500 p-2">
-        <div className="size-full bg-green-500"></div>
+      <div className="relative -left-px col-span-full col-start-5 row-span-2 row-start-2 py-2 pt-6 pr-16 pl-5">
+        <div className="size-full">
+          <ConfigSlider />
+        </div>
       </div>
 
       <h2 className="font-display text-gray-8 relative top-2 -right-px z-10 col-start-2 row-span-full row-start-2 text-xl/7 font-bold tracking-tight [writing-mode:vertical-lr]">
