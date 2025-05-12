@@ -1,10 +1,11 @@
 import { ComponentPropsWithoutRef, ComponentPropsWithRef, ReactNode } from 'react'
+import { Card } from '@/ui/card'
 
 import { cx } from '@/lib/utils'
 
 const ExperimentPage = () => {
   return (
-    <Surface className="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow">
+    <Card className="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow">
       <ul className="divide-y divide-gray-100 px-4 py-2">
         <li className="flex py-4">
           <div className="mr-4 flex-1">
@@ -58,7 +59,7 @@ const ExperimentPage = () => {
           </div>
         </li>
       </ul>
-    </Surface>
+    </Card>
   )
 }
 
