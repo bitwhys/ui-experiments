@@ -7,8 +7,9 @@ const cardBase = [
   '[--card-background:var(--color-main)] [--card-text-color:var(--color-cnt-primary)]',
   '[--card-description-color:var(--color-cnt-secondary)] [--card-inline-padding:calc(--spacing(7))]',
   '[--card-gap:--spacing(6)] [--card-radius:--spacing(4)]',
-  '[--tw-shadow-color:var(--color-black-a3)]',
+  // '[--tw-shadow-color:var(--color-black-a3)]',
   // base styles
+  'ring ring-brd-interactive',
   'flex flex-col gap-(--card-gap) shadow-sm',
   'bg-(--card-background) text-(--card-text-color)',
   'rounded-(--card-radius)',

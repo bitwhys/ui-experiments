@@ -5,17 +5,28 @@
 @import '../css/colors/tomato.css';
 @import '../css/colors/green.css';
 @import '../css/colors/red.css';
-@import '../css/semantic-colors.vars.css';
-@import '../css/themes.vars.css';
-@import "../css/colors.theme.css";
-@import "../css/semantic-colors.theme.css";
-
+@import '../css/tokens/semantic-colors.vars.css';
+@import '../css/tokens/themes.vars.css';
+@import '../css/tokens/shadows.vars.css';
+@import '../css/theme/colors.theme.css';
+@import '../css/theme/semantic-colors.theme.css';
 
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
 
-
 @custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --shadow-xs: var(--creight-shadow-xs);
+  --shadow-sm: var(--creight-shadow-sm);
+  --shadow-md: var(--creight-shadow-md);
+  --shadow-lg: var(--creight-shadow-lg);
+  --shadow-xl: var(--creight-shadow-xl);
+  --shadow-2xl: var(--creight-shadow-2xl);
+
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-syncopate);
+}
 
 @theme inline {
   /*--color-background: var(--background);*/
@@ -135,7 +146,6 @@
     @apply bg-page text-cnt-primary;
   }
 }
-
 
 @layer base {
   /* Custom scrollbar styling. Thanks @pranathiperii. */

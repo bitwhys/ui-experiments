@@ -26,7 +26,6 @@
   --bg-secondary: var(--color-gray-3);
   --bg-tertiary: var(--color-gray-4);
 
-
   --bg-accent-soft: var(--color-accent-3);
   /*--bg-info-soft: var(--color-info-3);*/
   --bg-success-soft: var(--color-success-3);
@@ -54,7 +53,7 @@
 
   --brd-success-line: var(--color-success-6);
   --brd-success-interactive: var(--color-success-7);
-  --brd-success-ring: var(--color-success-8),;
+  --brd-success-ring: var(--color-success-8);
 
   /*--brd-warning-line: var(var(--color-warning-6), var(--color-yellow-500));*/
   /*--brd-warning-interactive: var(var(--color-warning-7), var(--color-yellow-500));*/
@@ -171,7 +170,7 @@
   /*--brd-danger-ring: #e00018;*/
 
   /* Page Backgrounds */
-  --bg-page: #0B0B09;
+  --bg-page: #0b0b09;
   --bg-page-secondary: var(--color-gray-1);
   --bg-page-tertiary: var(--color-gray-2);
 
