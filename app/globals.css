@@ -142,9 +142,20 @@
 }
 
 @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-brd-line, currentColor);
+  }
+}
+
+@layer base {
   * {
     @apply border-brd-line outline-brd-line;
   }
+
   body {
     @apply bg-page text-cnt-primary;
   }
@@ -155,13 +166,16 @@
   pre::-webkit-scrollbar {
     width: 5px;
   }
+
   pre::-webkit-scrollbar-track {
     background: transparent;
   }
+
   pre::-webkit-scrollbar-thumb {
     background: var(--border);
     border-radius: 5px;
   }
+
   pre {
     scrollbar-width: thin;
     scrollbar-color: var(--border) transparent;

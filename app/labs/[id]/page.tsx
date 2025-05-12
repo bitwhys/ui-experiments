@@ -54,7 +54,7 @@ const PostPreview = ({ post }: PostPreviewProps) => {
   return (
     <>
       <div className="mr-4 flex-1">
-        <h4 className="text-base/6 leading-snug font-medium">{post.title}</h4>
+        <h4 className="text-sm/6 leading-tight font-medium">{post.title}</h4>
         <div className="text-cnt-secondary mt-1 text-sm">
           <span>{post.category}</span> • <time>{post.date}</time>
         </div>
