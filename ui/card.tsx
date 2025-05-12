@@ -2,17 +2,20 @@ import * as React from 'react'
 
 import { cx } from '@/lib/utils'
 
+const cardBase = [
+  // variables
+  '[--card-background:var(--color-main)] [--card-text-color:var(--color-cnt-primary)]',
+  '[--card-description-color:var(--color-cnt-secondary)] [--card-inline-padding:calc(--spacing(7))]',
+  '[--card-gap:--spacing(6)] [--card-radius:--spacing(4)]',
+  '[--tw-shadow-color:var(--color-black-a3)]',
+  // base styles
+  'flex flex-col gap-(--card-gap) shadow-sm',
+  'bg-(--card-background) text-(--card-text-color)',
+  'rounded-(--card-radius)',
+]
+
 function Card({ className, ...props }: React.ComponentProps<'div'>) {
-  return (
-    <div
-      data-slot="card"
-      className={cx(
-        'bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm',
-        className,
-      )}
-      {...props}
-    />
-  )
+  return <div data-slot="card" className={cx(cardBase, className)} {...props} />
 }
 
 function CardHeader({ className, ...props }: React.ComponentProps<'div'>) {
@@ -42,7 +45,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       data-slot="card-description"
-      className={cx('text-muted-foreground text-sm', className)}
+      className={cx('text-cnt-secondary text-sm', className)}
       {...props}
     />
   )
@@ -66,7 +69,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       data-slot="card-footer"
-      className={cx('flex items-center px-6 [.border-t]:pt-6', className)}
+      className={cx('flex items-center px-(--card-inline-padding) [.border-t]:pt-6', className)}
       {...props}
     />
   )
